@@ -2,6 +2,6 @@
 
 let answer = require('./hiker.js');
 
-test("answer", function() {
-    equal(answer(), 42, "to life the universe and everything");
+QUnit.test("answer", function(assert) {
+    assert.equal(answer(), 42, "to life the universe and everything");
 });
