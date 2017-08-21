@@ -8,7 +8,9 @@
 #NODE_VERSION=4.1.1
 #NODE_VERSION=4.2.1
 #NODE_VERSION=6.11.1
-NODE_VERSION=8.2.1
+#NODE_VERSION=8.2.1
+NODE_VERSION=8.4.0
+
 #
 # Create a dummy file config.js for qunit call --code needs a js file
 qunitDummyConfigFile=config.js
