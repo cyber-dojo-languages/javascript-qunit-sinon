@@ -17,5 +17,7 @@
   "progress_regexs": [
     "/\W*\d+\W+\d+\W+\d+\W+([1-9]\d*)\W+(\d+)\W+\d+\W+/",
     "/\W*\d+\W+\d+\W+\d+\W+(0)\W+\d+\W+\d+\W+/"
-  ]
+  ],
+
+  "runner_choice": "stateless"
 }
