@@ -5,7 +5,7 @@ LABEL maintainer=jon@jaggersoft.com
 RUN rm -rf /usr/local/lib/node_modules/npm
 RUN n latest
 
-RUN npm install -global qunit chai sinon sinon-chai
+RUN npm install -global qunit qunit-cli chai sinon sinon-chai
 
 ENV NODE_PATH /usr/lib/node_modules
 

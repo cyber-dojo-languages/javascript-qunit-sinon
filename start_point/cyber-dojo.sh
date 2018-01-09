@@ -21,4 +21,4 @@ if [ -f .jshintrc ]
   then
     n use $NODE_VERSION /usr/lib/node_modules/jshint/bin/jshint --config .jshintrc *.js
 fi
-n use $NODE_VERSION /usr/local/bin/qunit --code $qunitDummyConfigFile --tests *-test.js
+n use $NODE_VERSION /usr/local/bin/qunit-cli *-test.js
