@@ -2,6 +2,9 @@
 lambda { |stdout,stderr,status|
   output = stdout + stderr
 
+  js_hint_pattern = /^(\d+) error(s?)/
+  return :amber if js_hint_pattern.match(output)
+
   died_pattern = /Died on test/
   return :amber if died_pattern.match(output)
 
