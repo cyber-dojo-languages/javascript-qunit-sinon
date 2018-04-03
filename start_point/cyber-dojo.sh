@@ -27,5 +27,5 @@ if [ $? == 0 ]; then
   # Use npm package 'n' to call qunit with selected node version:
   n use $NODE_VERSION \
     /usr/local/bin/qunit-cli \
-    *-test.js
+    *test*.js
 fi
