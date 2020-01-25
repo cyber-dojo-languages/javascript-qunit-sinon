@@ -1,4 +1,8 @@
 {
+  "display_name": "Javascript, qunit+sinon",
+
+  "image_name": "cyberdojofoundation/javascript-node_qunit_sinon",
+
   "visible_filenames": [
     "hiker-test.js",
     "hiker.js",
@@ -9,10 +13,6 @@
   "filename_extension": ".js",
 
   "tab_size": 2,
-
-  "display_name": "Javascript, qunit+sinon",
-
-  "image_name": "cyberdojofoundation/javascript-node_qunit_sinon",
 
   "progress_regexs": [
     "/\W*\d+\W+\d+\W+\d+\W+([1-9]\d*)\W+(\d+)\W+\d+\W+/",
