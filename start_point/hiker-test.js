@@ -3,5 +3,6 @@
 const hiker = require('./hiker.js');
 
 QUnit.test('answer', function(assert) {
-    assert.equal(hiker.answer(), 42, 'to life the universe and everything');
+    const info = 'to life the universe and everything';
+    assert.equal(hiker.answer(), 42, info);
 });
