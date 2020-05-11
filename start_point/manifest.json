@@ -1,20 +1,18 @@
 {
   "display_name": "Javascript, qunit+sinon",
-
   "image_name": "cyberdojofoundation/javascript-node_qunit_sinon",
-
-  "visible_filenames": [
+  "visible_filenames":
+  [
     "hiker-test.js",
     "hiker.js",
     "cyber-dojo.sh",
     ".jshintrc"
   ],
-
-  "filename_extension": ".js",
-
+  "filename_extension": [ ".js" ],
+  "max_seconds": 10,
   "tab_size": 2,
-
-  "progress_regexs": [
+  "progress_regexs":
+  [
     "/\W*\d+\W+\d+\W+\d+\W+([1-9]\d*)\W+(\d+)\W+\d+\W+/",
     "/\W*\d+\W+\d+\W+\d+\W+(0)\W+\d+\W+\d+\W+/"
   ]
