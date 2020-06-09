@@ -1,6 +1,6 @@
 {
   "display_name": "Javascript, qunit+sinon",
-  "image_name": "cyberdojofoundation/javascript-node_qunit_sinon",
+  "image_name": "cyberdojofoundation/javascript_node_qunit_sinon",
   "visible_filenames":
   [
     "hiker-test.js",
