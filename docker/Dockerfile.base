@@ -1,7 +1,6 @@
 FROM cyberdojofoundation/javascript-node:6df9f12
 LABEL maintainer=jon@jaggersoft.com
 
-RUN mkdir /etc/qunit_sinon
 WORKDIR /etc/qunit_sinon
 COPY package.json .
 RUN npm install
