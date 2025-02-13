@@ -5,7 +5,7 @@ readonly JSON=`cat ${MY_DIR}/docker/image_name.json`
 [[ ${JSON} =~ ${REGEX} ]]
 readonly IMAGE_NAME="${BASH_REMATCH[1]}"
 
-readonly EXPECTED=2.24.0 # qunit version
+readonly EXPECTED=2.24.1 # qunit version
 readonly ACTUAL=$(docker run --rm -i ${IMAGE_NAME} sh -c 'npx qunit --version')
 
 if echo "${ACTUAL}" | grep -q "${EXPECTED}"; then
