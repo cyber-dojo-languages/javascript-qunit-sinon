@@ -1,12 +1,25 @@
-#!/bin/bash -Eeu
+#!/usr/bin/env bash
+set -Eeu
+
 readonly MY_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 readonly REGEX="image_name\": \"(.*)\""
 readonly JSON=`cat ${MY_DIR}/docker/image_name.json`
 [[ ${JSON} =~ ${REGEX} ]]
 readonly IMAGE_NAME="${BASH_REMATCH[1]}"
 
-readonly EXPECTED=2.24.1 # qunit version
-readonly ACTUAL=$(docker run --rm -i ${IMAGE_NAME} sh -c 'npx qunit --version')
+function echo_package_version()
+{
+  local -r name="${1}"
+  local -r pattern=" ${name}@"
+  local -r command="npm list | grep -E '${pattern}'"
+  echo ${command}
+  docker run --rm -i ${IMAGE_NAME} sh -c "${command}"
+}
+
+readonly EXPECTED=2.25.0 # qunit version
+readonly ACTUAL="$(echo_package_version qunit)"
+
+#echo_package_version sinon
 
 if echo "${ACTUAL}" | grep -q "${EXPECTED}"; then
   echo "VERSION CONFIRMED as ${EXPECTED}"
