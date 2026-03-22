@@ -12,7 +12,6 @@ function echo_package_version()
   local -r name="${1}"
   local -r pattern=" ${name}@"
   local -r command="npm list | grep -E '${pattern}'"
-  echo ${command}
   docker run --rm -i ${IMAGE_NAME} sh -c "${command}"
 }
 
