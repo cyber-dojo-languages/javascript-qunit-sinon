@@ -15,7 +15,7 @@ function echo_package_version()
   docker run --rm -i ${IMAGE_NAME} sh -c "${command}"
 }
 
-readonly EXPECTED=2.26 # qunit version
+readonly EXPECTED=3.0 # qunit version
 readonly ACTUAL="$(echo_package_version qunit)"
 
 #echo_package_version sinon
